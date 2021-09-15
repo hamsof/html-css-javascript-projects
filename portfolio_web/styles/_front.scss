@@ -1,0 +1,38 @@
+section.front{
+    background-color: palegreen;
+    height: calc(100vh - 90px);
+    font-size: xx-large;
+    color: blueviolet;
+    .animation{
+        display: flex;
+        justify-content: baseline;
+    }
+    //its hafiz abdulmanan
+    .content_1{
+        color: darkgoldenrod;
+    }
+    //i am a i love
+    .content_2{
+        color: blue;
+    }
+    //code devloper
+    .span_inside_animation{
+        color: darkred;
+    }
+    //cursor after content
+    span.cursor{
+        display: inline-block;
+        background-color: blue;
+        margin-left: 5px;
+        height: 35px;
+        width: 3px;
+        animation: blink 0.5s infinite;
+    }
+    @keyframes blink {
+        0%  { background-color: blue; }
+        49% { background-color: blue; }
+        50% { background-color: transparent; }
+        99% { background-color: transparent; }
+        100%  { background-color: blue; }
+      }    
+}

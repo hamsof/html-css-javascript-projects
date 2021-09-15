@@ -1,0 +1,117 @@
+header {
+  height: 90px;
+  background-color: orangered;
+}
+
+header .container {
+  width: 85%;
+  float: right;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .logo {
+  color: white;
+  font-size: large;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white;
+  font-size: larger;
+  margin-right: 50px;
+}
+
+header button {
+  width: 25%;
+  height: 35%;
+  background-color: peru;
+}
+
+section.front {
+  background-color: palegreen;
+  height: calc(100vh - 90px);
+  font-size: xx-large;
+  color: blueviolet;
+}
+
+section.front .animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+}
+
+section.front .content_1 {
+  color: darkgoldenrod;
+}
+
+section.front .content_2 {
+  color: blue;
+}
+
+section.front .span_inside_animation {
+  color: darkred;
+}
+
+section.front span.cursor {
+  display: inline-block;
+  background-color: blue;
+  margin-left: 5px;
+  height: 35px;
+  width: 3px;
+  -webkit-animation: blink 0.5s infinite;
+          animation: blink 0.5s infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    background-color: blue;
+  }
+  49% {
+    background-color: blue;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+@keyframes blink {
+  0% {
+    background-color: blue;
+  }
+  49% {
+    background-color: blue;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+  100% {
+    background-color: blue;
+  }
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+/*# sourceMappingURL=main.css.map */
