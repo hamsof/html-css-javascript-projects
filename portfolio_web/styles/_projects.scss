@@ -1,0 +1,54 @@
+@import "./functions";
+
+section.projects{
+    background-color:#1e1e1e;
+    padding: 20px;
+    .project_heading{
+        @include heading();
+    }
+    .project_profile{
+        margin-top: 50px;
+        img{
+            height: 300px;
+            width: 300px;
+            border: $background solid 5px;
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px;
+            margin-right: 50px;
+        }
+        .profile{
+            display: flex;
+            margin-bottom: 50px;
+        }
+        .intro_project{
+            margin-top: 30px;
+        }
+        .heading{
+            font-size: 40px;
+            color: $background;
+        }
+        .project_text{
+            font-size: larger;
+            font-family: 'Kanit', sans-serif;
+            word-spacing: 2px;
+            line-height: 1.9;
+        }
+        .live,.code{
+            padding: 10px;
+            border: 2px solid $background;
+            border-radius: 10px;
+            width: fit-content;
+            margin-bottom: 10px;
+            cursor: pointer;
+            &:hover{
+                background-color: $background;
+            }
+        }
+    }
+    .see_more{
+        @include heading();
+        float: left;
+        cursor: pointer;
+    }
+}

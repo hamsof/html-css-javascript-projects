@@ -3,3 +3,32 @@
     justify-content: $justify;
     align-items: $align;
 }
+@mixin button()
+{
+    padding: 10px;
+    border-radius: 20px;
+    background-color:$background;
+    border-style: none;
+}
+@mixin heading() 
+{
+        margin: 0 auto;
+        @include flexing(center,center);
+       font-size: larger;
+       text-align: center;
+       width: 200px;
+       height: 50px;
+       background-color: $background;
+       color: $upground;
+       border-radius: 20px;
+}
+@mixin border_button()
+{
+
+}
+$background:#dd5c5c;
+$upground:#cdebded4;
+
+
+//#dd5c5c
+//#cdebded4

@@ -1,8 +1,8 @@
 window.onload=function hafiz(){
     var txt_2 = 'I am a';
-    var txt_4=" develper"
+    var txt_4=" Develper ^_^"
     var txt_3 = "I love to"
-    var txt_5=" code"
+    var txt_5=" Code {...}"
     var speed = 300;
     let content_3;
     let myElm;
@@ -25,8 +25,8 @@ window.onload=function hafiz(){
             content_3.innerHTML+=txt_4.charAt(i);
             await timer(speed);
         }//developer
-
-        content_2.innerHTML=" ";//vanishing now
+        await timer(1500);
+        content_2.innerHTML="";//vanishing now
         
         for (var i = 0; i < txt_3.length; i++) {
             content_2.innerHTML+=txt_3.charAt(i);

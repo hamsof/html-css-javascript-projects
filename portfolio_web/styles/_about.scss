@@ -1,0 +1,46 @@
+@import "./functions";
+section.about{
+    height: 100vh;
+    background-color:#1e1e1e;
+    padding: 20px;
+    .heading{
+        margin: 0 auto;
+        @include flexing(center,center);
+       font-size: larger;
+       text-align: center;
+       width: 200px;
+       height: 50px;
+       background-color: $background;
+       color: $upground;
+       border-radius: 20px;
+    }
+    i{
+        margin-top: 90px;
+        color:$background;
+        font-size: 50px;
+    }
+    .container_text{
+        @include flexing(space-between,flex-start);
+        width: 95%;
+        float: right;
+        .text{
+            font-size: larger;
+            font-family: 'Kanit', sans-serif;
+            word-spacing: 2px;
+            line-height: 1.9;
+            width: 700px;
+        }
+    }
+    .img{
+        width: 400px;
+        height: 400px;
+        overflow: hidden;
+    }
+    img{
+        height: 300px;
+        width: 300px;
+        border-radius:50%;
+        border: 10px solid $background;
+        padding: 20px;
+    }
+}

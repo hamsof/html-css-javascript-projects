@@ -1,26 +1,33 @@
 @import "./functions";
 header{
     height: 90px;
-    background-color:orangered;
     .container{
+        margin-right: 20px;
         width: 85%;
         float: right;
         height: 100%;
         @include flexing(space-between,center);
     }
     .logo{
-        color: white;
-        font-size: large;
+        font-family: 'Pacifico', cursive;
+        color: $background;
+        font-size: 50px;
     }
     nav a{
         text-decoration: none;
-        color: white;
+        color: $upground;
         font-size: larger;
-        margin-right: 50px;
+        margin-left: 50px;
+       padding: 5px 10px;
+        &:hover,&:focus{      
+            @include button();
+        }
     }
-    button{
-        width: 25%;
-        height: 35%;
-        background-color: peru;
+    nav :last-of-type
+    {
+        &:hover,&:focus{
+            border:none;
+        }
+        @include button();
     }
 }

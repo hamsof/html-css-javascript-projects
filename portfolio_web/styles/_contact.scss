@@ -1,0 +1,31 @@
+@import "./functions";
+
+section.contact{
+    padding: 50px;
+    background-color:#1e1e1e;
+    .contact_heading{
+        @include heading();
+    }
+    .icons{
+        margin: 0 auto;
+        @include flexing(space-evenly,center);
+        margin-top: 50px;
+        width: 80%;
+        font-size: 30px;
+    }
+    .fa{
+        height: 80px;
+        width: 80px;
+        border-radius: 20px;
+        @include flexing(center,center);
+        cursor: pointer;
+        border:2px solid $background;
+        &:hover{
+            background-color:$background;
+        }
+    }
+    a {
+        color: $upground;            
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,94 @@
+section.projects {
+  background-color: #1e1e1e;
+  padding: 20px;
+}
+
+section.projects .project_heading {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: larger;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: #dd5c5c;
+  color: #cdebded4;
+  border-radius: 20px;
+}
+
+section.projects .project_profile {
+  margin-top: 50px;
+}
+
+section.projects .project_profile img {
+  height: 300px;
+  width: 300px;
+  border: #dd5c5c solid 5px;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+  margin-right: 50px;
+}
+
+section.projects .project_profile .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+section.projects .project_profile .intro_project {
+  margin-top: 30px;
+}
+
+section.projects .project_profile .heading {
+  font-size: 40px;
+  color: #dd5c5c;
+}
+
+section.projects .project_profile .project_text {
+  font-size: larger;
+  font-family: 'Kanit', sans-serif;
+  word-spacing: 2px;
+  line-height: 1.9;
+}
+
+section.projects .project_profile .live, section.projects .project_profile .code {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #dd5c5c;
+  border-style: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 10px;
+}
+
+section.projects .see_more {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: larger;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  background-color: #dd5c5c;
+  color: #cdebded4;
+  border-radius: 20px;
+  float: left;
+}
+/*# sourceMappingURL=projects.css.map */

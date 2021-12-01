@@ -1,0 +1,10 @@
+@import "./functions";
+footer{
+    height: 70px;
+    background-color: #303838;
+    @include flexing(center,center);
+    .footer_text{
+        color:#e4c5be;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+}

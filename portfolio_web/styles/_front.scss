@@ -1,38 +1,56 @@
+@import "./functions";
+
+
+main{
+    background-image: url("../Capture (1).png");
+}
+
+
 section.front{
-    background-color: palegreen;
     height: calc(100vh - 90px);
     font-size: xx-large;
-    color: blueviolet;
+    @include flexing(center,center);
+    //border
+    .box{
+        position: absolute;
+        height: 200px;
+        width: 600px;
+        border: 5px solid $background;
+        border-radius: 20px 
+    }
+
+    //all text
+    .front_text_container{
+        font-family: cursive;
+        @include flexing(center,center);
+        flex-direction: column;
+        color: $upground;
+    }
+
+    //for making curser and content to align
     .animation{
-        display: flex;
-        justify-content: baseline;
+        @include flexing(baseline,center)
     }
-    //its hafiz abdulmanan
-    .content_1{
-        color: darkgoldenrod;
-    }
-    //i am a i love
-    .content_2{
-        color: blue;
-    }
-    //code devloper
+
+    //developer and code color
     .span_inside_animation{
-        color: darkred;
+        color: $background;
     }
+
+
     //cursor after content
     span.cursor{
         display: inline-block;
-        background-color: blue;
         margin-left: 5px;
         height: 35px;
         width: 3px;
         animation: blink 0.5s infinite;
     }
     @keyframes blink {
-        0%  { background-color: blue; }
-        49% { background-color: blue; }
+        0%  { background-color: $upground; }
+        49% { background-color: $upground; }
         50% { background-color: transparent; }
         99% { background-color: transparent; }
-        100%  { background-color: blue; }
+        100%  { background-color: $upground; }
       }    
 }
